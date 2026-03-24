@@ -1,7 +1,3 @@
-window.onload = function () {
-    displayData();
-};
-
 function saveData() {
     let student = document.getElementById("student").value;
     let message = document.getElementById("message").value;
@@ -13,7 +9,13 @@ function saveData() {
 
     let data = JSON.parse(localStorage.getItem("interactions")) || [];
 
-    data.push({ student, message });
+    let currentDate = new Date().toLocaleString();
+
+    data.push({
+        student: student,
+        message: message,
+        date: currentDate
+    });
 
     localStorage.setItem("interactions", JSON.stringify(data));
 
@@ -22,35 +24,13 @@ function saveData() {
 
     displayData();
 }
-
-function displayData() {
-    let tableBody = document.getElementById("tableBody");
-    tableBody.innerHTML = "";
-
-    let data = JSON.parse(localStorage.getItem("interactions")) || [];
-
-    data.forEach((item, index) => {
-        let row = `
-            <tr>
-                <td>${item.student}</td>
-                <td>${item.message}</td>
-                <td>
-                    <button onclick="deleteData(${index})">Delete</button>
-                </td>
-            </tr>
-        `;
-        tableBody.innerHTML += row;
-    });
-}
-
-function deleteData(index) {
-    let data = JSON.parse(localStorage.getItem("interactions")) || [];
-    data.splice(index, 1);
-    localStorage.setItem("interactions", JSON.stringify(data));
-    displayData();
-}
-
-function clearAll() {
-    localStorage.removeItem("interactions");
-    displayData();
-}
+let row = `
+<tr>
+    <td>${item.student}</td>
+    <td>${item.message}</td>
+    <td>${item.date}</td>
+    <td>
+        <button onclick="deleteData(${index})">Delete</button>
+    </td>
+</tr>
+`;
