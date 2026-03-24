@@ -13,3 +13,26 @@ The website allows users to enter student details and interaction messages, whic
 The system is built using basic web technologies such as HTML, CSS, and JavaScript, making it lightweight and easy to use. It can be further enhanced with database integration for permanent data storage and advanced features.
 
 Overall, this project provides an efficient and user-friendly solution for managing mentor–student interactions digitally.
+
+##  NEED FOR THE PROJECT
+Manual tracking is inefficient
+No proper record of interactions
+Difficult to monitor student progress
+Lack of centralized system
+Time-consuming communication
+
+##  OBJECTIVES
+To digitize mentor–student communication
+To maintain interaction history
+To provide easy data access
+To improve tracking and monitoring
+To create a simple and user-friendly system
+
+##  FEATURES
+Add student name and message
+Store data using local storage
+Display records in table format
+Delete individual records
+Clear all records
+Automatic date & time tracking
+Responsive and simple UI
