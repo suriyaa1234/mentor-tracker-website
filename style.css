@@ -1,10 +1,31 @@
 body {
     font-family: Arial;
+    background: #f4f4f4;
     padding: 20px;
+    text-align: center;
 }
 
-input, button {
-    display: block;
-    margin: 10px 0;
-    padding: 8px;
+h1 {
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+li {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
 }
