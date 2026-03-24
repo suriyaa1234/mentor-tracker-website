@@ -1,7 +1,26 @@
+##  PROBLEM STATEMENT
+
+In many educational institutions, mentor–student interactions are not properly recorded or managed. Communication between mentors and students often happens informally through conversations, calls, or messages, which are not systematically documented.
+
+Due to the lack of a structured system:
+
+Important discussions and feedback may be forgotten
+There is no proper history of interactions
+Tracking student progress becomes difficult
+Mentors cannot efficiently monitor or follow up with students
+Manual record-keeping (if done) is time-consuming and error-prone
+
+As a result, both mentors and students face challenges in maintaining consistent communication and ensuring effective guidance.
+
+Therefore, there is a need for a simple, digital solution that can record, store, and manage mentor–student interactions in an organized and accessible way.
+
 ##  Technology Stack
+
+
 Frontend: HTML, CSS, JavaScript
-Backend: JavaScript / Firebase
-Database: Local Storage / Firebase
+Backend: JavaScript 
+Database: Local Storage
+
 ##  Description
 
 The "Website for Mentor–Student Interaction Tracking" is a web-based application designed to improve communication between mentors and students. 
@@ -36,3 +55,4 @@ Delete individual records
 Clear all records
 Automatic date & time tracking
 Responsive and simple UI
+
