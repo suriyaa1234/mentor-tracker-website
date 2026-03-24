@@ -48,6 +48,7 @@ To improve tracking and monitoring
 To create a simple and user-friendly system
 
 ##  FEATURES
+
 Add student name and message
 Store data using local storage
 Display records in table format
@@ -55,4 +56,14 @@ Delete individual records
 Clear all records
 Automatic date & time tracking
 Responsive and simple UI
+
+##  LIMITATIONS
+
+Data stored only in browser (local storage)
+No login/authentication system
+Cannot access data from different devices
+Limited scalability
+No cloud/database integration (yet)
+
+
 
