@@ -14,12 +14,31 @@ As a result, both mentors and students face challenges in maintaining consistent
 
 Therefore, there is a need for a simple, digital solution that can record, store, and manage mentor–student interactions in an organized and accessible way.
 
-##  Technology Stack
+##  Tech Stack
 
+Frontend;
+HTML (HyperText Markup Language)
+Used to design the structure of the web pages (forms, tables, layout).
+CSS (Cascading Style Sheets)
+Used for styling the website (colors, layout, spacing, responsiveness).
+JavaScript (Client-side)
+Used to:
+Handle user input
+Store and retrieve data
+Dynamically update the UI.
 
-Frontend: HTML, CSS, JavaScript
-Backend: JavaScript 
-Database: Local Storage
+Data Storage;
+Local Storage (Browser Storage)
+Used to store mentor–student interaction data directly in the browser.
+Data remains even after page refresh.
+
+Development Tools;
+Visual Studio Code (VS Code)
+Used for writing and managing code.
+Git
+Version control system used to track changes.
+GitHub
+Used to host and share the project online.
 
 ##  Description
 
@@ -34,6 +53,7 @@ The system is built using basic web technologies such as HTML, CSS, and JavaScri
 Overall, this project provides an efficient and user-friendly solution for managing mentor–student interactions digitally.
 
 ##  NEED FOR THE PROJECT
+
 Manual tracking is inefficient
 No proper record of interactions
 Difficult to monitor student progress
@@ -41,6 +61,7 @@ Lack of centralized system
 Time-consuming communication
 
 ##  OBJECTIVES
+
 To digitize mentor–student communication
 To maintain interaction history
 To provide easy data access
@@ -56,14 +77,6 @@ Delete individual records
 Clear all records
 Automatic date & time tracking
 Responsive and simple UI
-
-##  LIMITATIONS
-
-Data stored only in browser (local storage)
-No login/authentication system
-Cannot access data from different devices
-Limited scalability
-No cloud/database integration (yet)
 
 
 
