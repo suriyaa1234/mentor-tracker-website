@@ -17,28 +17,24 @@ Therefore, there is a need for a simple, digital solution that can record, store
 ##  Tech Stack
 
 Frontend;
-HTML (HyperText Markup Language)
-Used to design the structure of the web pages (forms, tables, layout).
-CSS (Cascading Style Sheets)
-Used for styling the website (colors, layout, spacing, responsiveness).
-JavaScript (Client-side)
-Used to:
-Handle user input
-Store and retrieve data
-Dynamically update the UI.
+HTML:
+ -Used to design the structure of the web pages (forms, tables, layout).
+CSS :
+ -Used for styling the website (colors, layout, spacing, responsiveness).
+JavaScript:
+ -Handle user input
+ -Store and retrieve data
+ -Dynamically update the UI.
 
-Data Storage;
-Local Storage (Browser Storage)
-Used to store mentor–student interaction data directly in the browser.
-Data remains even after page refresh.
+Data Storage:
+ -Local Storage (Browser Storage)
+ -Used to store mentor–student interaction data directly in the browser.
+ -Data remains even after page refresh.
 
-Development Tools;
-Visual Studio Code (VS Code)
-Used for writing and managing code.
-Git
-Version control system used to track changes.
-GitHub
-Used to host and share the project online.
+Development Tools:
+Visual Studio Code: Used for writing and managing code.
+Git :Version control system used to track changes.
+GitHub:Used to host and share the project online.
 
 ##  Description
 
