@@ -25,11 +25,11 @@ JavaScript:
  -Handle user input
  -Store and retrieve data
  -Dynamically update the UI.
+database:
+ - Mysql
 
-Data Storage:
- -Local Storage (Browser Storage)
- -Used to store mentor–student interaction data directly in the browser.
- -Data remains even after page refresh.
+Backend:
+ - Node.js, Express.js
 
 Development Tools:
 Visual Studio Code: Used for writing and managing code.

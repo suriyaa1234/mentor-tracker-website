@@ -9,31 +9,30 @@
 <div class="container">
     <h1>Mentor–Student Interaction Tracking</h1>
 
-    <div class="form">
-        <input type="text" id="student" placeholder="Student Name">
-        <input type="text" id="message" placeholder="Interaction Message">
+    <input type="text" id="student" placeholder="Student Name">
+    <input type="text" id="message" placeholder="Message">
 
-        <button onclick="saveData()">Save</button>
-        <button onclick="clearAll()">Clear All</button>
-    </div>
+    <button onclick="saveData()">Save</button>
 
-    <h2>Interaction Records</h2>
-
+    <h2>Records</h2>
     <table>
         <thead>
             <tr>
-                <th>Student Name</th>
+                <th>Student</th>
                 <th>Message</th>
+                <th>Date</th>
                 <th>Action</th>
             </tr>
         </thead>
-        <tbody id="tableBody">
-        </tbody>
+        <tbody id="tableBody"></tbody>
     </table>
 </div>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
 
 <script src="script.js"></script>
 
 </body>
 </html>
-<th>Date & Time</th>

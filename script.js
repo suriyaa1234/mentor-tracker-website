@@ -1,36 +1,57 @@
+// 🔥 Your Firebase config (paste from Firebase)
+const firebaseConfig = {
+  apiKey: "YOUR_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+// SAVE DATA
 function saveData() {
     let student = document.getElementById("student").value;
     let message = document.getElementById("message").value;
 
     if (student === "" || message === "") {
-        alert("Please fill all fields");
+        alert("Fill all fields");
         return;
     }
 
-    let data = JSON.parse(localStorage.getItem("interactions")) || [];
-
-    let currentDate = new Date().toLocaleString();
-
-    data.push({
+    db.collection("interactions").add({
         student: student,
         message: message,
-        date: currentDate
+        date: new Date().toLocaleString()
     });
-
-    localStorage.setItem("interactions", JSON.stringify(data));
 
     document.getElementById("student").value = "";
     document.getElementById("message").value = "";
-
-    displayData();
 }
-let row = `
-<tr>
-    <td>${item.student}</td>
-    <td>${item.message}</td>
-    <td>${item.date}</td>
-    <td>
-        <button onclick="deleteData(${index})">Delete</button>
-    </td>
-</tr>
-`;
+
+// DISPLAY DATA (REAL-TIME 🔥)
+db.collection("interactions").onSnapshot(snapshot => {
+    let table = document.getElementById("tableBody");
+    table.innerHTML = "";
+
+    snapshot.forEach(doc => {
+        let data = doc.data();
+
+        let row = `
+        <tr>
+            <td>${data.student}</td>
+            <td>${data.message}</td>
+            <td>${data.date}</td>
+            <td>
+                <button onclick="deleteData('${doc.id}')">Delete</button>
+            </td>
+        </tr>
+        `;
+        table.innerHTML += row;
+    });
+});
+
+// DELETE DATA
+function deleteData(id) {
+    db.collection("interactions").doc(id).delete();
+}
