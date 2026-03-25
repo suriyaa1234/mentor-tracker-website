@@ -18,9 +18,9 @@ Therefore, there is a need for a simple, digital solution that can record, store
 
 Frontend;
 HTML:
- -Used to design the structure of the web pages (forms, tables, layout).
+ -Used to design the structure of the web pages.
 CSS :
- -Used for styling the website (colors, layout, spacing, responsiveness).
+ -Used for styling the website.
 JavaScript:
  -Handle user input
  -Store and retrieve data
